@@ -8,8 +8,21 @@
     body {
       margin: 0;
       padding: 0;
-      background: url('invitacion80.jpg') no-repeat center center fixed;
-      background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+      height: 100%;
+    }
+
+    body {
+      background-image: url('invitacion80.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;   /* Hace que cubra toda la pantalla */
+      background-attachment: fixed;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        background-attachment: scroll; /* Evita problemas en móviles */
+      }
     }
   </style>
 </head>
